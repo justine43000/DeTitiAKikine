@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         'bellefair': ['Bellefair', 'sans-serif'],
+        'edu-qlld-beginner': ['"Edu QLD Beginner"', 'sans-serif'],
       },
       colors: {
         olive: '#D4D6CA', 

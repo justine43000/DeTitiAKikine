@@ -3,11 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: 'Bellefair';
+    font-family: 'Bellefair' !important;
     src: url('fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');   
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
     font-family: 'Bellefair-bold';
-    src: url('fonts/');
+    src: url('fonts/Edu_QLD_Beginner/static/EduQLDBeginner-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
