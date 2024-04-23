@@ -1,0 +1,13 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Bellefair';
+    src: url('fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');   
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Bellefair-bold';
+    src: url('fonts/');
+}
