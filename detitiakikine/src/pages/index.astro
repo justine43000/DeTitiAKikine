@@ -1,3 +1,7 @@
+---
+import Nav from '../components/Nav.astro';
+---
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,94 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:400,700">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css"> -->
-    <!--[if lt IE 10]>
-    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Edu+QLD+Beginner:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<!-- Navbar -->
-<header class="w-full bg-olive py-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <a href="#" class="ml-8"><img src="/logo-svg.svg" class="w-20"/></a>
-
-        <!-- Menu Burger -->
-        <button class="text-text md:hidden" id="burger-btn">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-
-        <!-- Menu -->
-        <nav class="hidden md:flex items-center space-x-6 text-text">
-            <a href="fitness.html">A propos</a>
-            <a href="food.html">Sur mesure</a>
-            <a href="health.html">Maroquinerie</a>
-            <div class="relative">
-                <a href="#">Mes réalisations</a>
-                <ul class="absolute hidden top-full left-0 bg-olive text-text py-2 px-4 rounded-lg">
-                    <li><a href="beauty.html">Hommes</a></li>
-                    <li><a href="beauty-list.html">Femmes</a></li>
-                    <li><a href="single-post.html">Enfants</a></li>
-                </ul>
+    <Nav />
+    <main>
+        <section class="bg-image h-96 flex items-center justify-center" style="background-image: url('/image.png'); background-size: cover; background-position: center;">    </section> 
+            <div class="text-center text-container text-text">
+                <h1 class="text-4xl font-Bellefair mb-4">De l'écran à votre garde-robe, une élégance sur-mesure</h1>
+                <p class="text-m">Découvrez notre service de confection sur-mesure, où que vous soyez.</p>
             </div>
-        </nav>
-    </div>
-</header>
-
-<!-- Menu Burger Overlay (hidden by default) -->
-<div class="fixed top-0 left-0 w-full h-full bg-olive bg-opacity-50 z-50 hidden" id="burger-overlay">
-    <div class="absolute top-0 right-0 p-4">
-        <!-- Close Button -->
-        <button class="text-text" id="close-btn">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-        </button>
-    </div>
-
-    <!-- Burger Menu -->
-    <div class="flex flex-col items-center justify-center h-full">
-        <a href="fitness.html" class="text-text py-4">A propos</a>
-        <a href="food.html" class="text-text py-4">Sur-mesure</a>
-        <a href="health.html" class="text-text py-4">Maroquinerie</a>
-        <a href="love.html" class="text-text py-4">Mes réalisations</a>
-        <!-- Autres éléments de menu -->
-    </div>
-</div>
-<main>
-	<section>
-		<div>
-			<h1>De l'écran à votre garde-robe, une élégance sur-mesure
-			</h1>
-			<p></p>
-		</div>
-		<img />
-	</section>
-</main>
-
-<!-- JavaScript -->
-<script type="module">
-    const burgerBtn = document.getElementById('burger-btn');
-    const closeBtn = document.getElementById('close-btn');
-    const burgerOverlay = document.getElementById('burger-overlay');
-
-    // Afficher le menu burger
-    burgerBtn.addEventListener('click', () => {
-        burgerOverlay.classList.remove('hidden');
-    });
-
-    // Cacher le menu burger
-    closeBtn.addEventListener('click', () => {
-        burgerOverlay.classList.add('hidden');
-    });
-</script>
+        <section>
+            <a href="">
+                <img/>
+            </a>
+        </section>
+    </main>
 </body>
+
 </html>
