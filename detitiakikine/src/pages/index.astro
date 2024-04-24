@@ -7,7 +7,7 @@ import Nav from '../components/Nav.astro';
 
 <head>
     <!-- Site Title-->
-    <title>Home</title>
+    <title>De Titi à Kikine</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,12 +26,75 @@ import Nav from '../components/Nav.astro';
                 <h1 class="text-4xl font-Bellefair mb-4">De l'écran à votre garde-robe, une élégance sur-mesure</h1>
                 <p class="text-m">Découvrez notre service de confection sur-mesure, où que vous soyez.</p>
             </div>
-        <section>
-            <a href="">
-                <img/>
-            </a>
-        </section>
-    </main>
+            <section class="py-16 px-4">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-8">Découvrez nos Collections</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Bouton Hommes -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                        <img src="/visuel_venir.jpg" alt="Hommes" class="w-32 h-32 mr-4 object-cover rounded-full">
+                        <a href="/collections/hommes" class="text-text font-bold hover:text-olive transition duration-200">Hommes</a>
+                    </div>
+                    <!-- Bouton Femmes -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                        <img src="/visuel_venir.jpg" alt="Femmes" class="w-32 h-32 mr-4 object-cover rounded-full">
+                        <a href="/collections/femmes" class="text-text font-bold hover:text-olive transition duration-200">Femmes</a>
+                    </div>
+                    <!-- Bouton Enfants -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                        <img src="/visuel_venir.jpg" alt="Enfants" class="w-32 h-32 mr-4 object-cover rounded-full">
+                        <a href="/collections/enfants" class="text-text font-bold hover:text-olive transition duration-200">Enfants</a>
+                    </div>
+                    <!-- Bouton Maroquinerie -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                        <img src="/visuel_venir.jpg" alt="Maroquinerie" class="w-32 h-32 mr-4 object-cover rounded-full">
+                        <a href="/collections/maroquinerie" class="text-text font-bold hover:text-olive transition duration-200">Maroquinerie</a>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            
+            <!-- Section Prenez rendez-vous -->
+            <!-- <section class="bg-olive py-16 px-4">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text mb-8">Prenez rendez-vous</h2>
+                    <p class="text-lg md:text-xl lg:text-2xl text-text mb-8">Contactez-nous pour toute question ou pour discuter de votre projet.</p>
+                    <a href="https://cal.com" class="bg-gray-600 text-white px-8 py-4 rounded-full hover:bg-gray-700 transition duration-200">Prenez rendez-vous</a>
+                </div>
+            </section> -->
+        </main>
+        
+        <!-- Footer -->
+        <!-- <footer class="bg-olive text-text py-16">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between"> -->
+                    <!-- Liens de Footer -->
+                    <!-- <div class="w-full md:w-2/3">
+                        <div class="flex flex-wrap justify-center md:justify-end">
+                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Conditions d'utilisation</a>
+                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Gestion des données</a>
+                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Facebook</a>
+                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Twitter</a>
+                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Instagram</a>
+                        </div>
+                    </div> -->
+                    <!-- Input de Newsletter -->
+                    <!-- <div class="w-full md:w-1/3 mb-8 md:mb-0">
+                        <h3 class="text-lg font-semibold text-gray-400 mb-4">Inscrivez-vous à notre newsletter</h3>
+                        <form action="#" method="POST">
+                            <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+                                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" class="appearance-none bg-transparent border-none w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none" required>
+                                <button type="submit" class="bg-gray-700 text-white px-4 py-3 hover:bg-gray-800 focus:outline-none">S'inscrire</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+
 </body>
 
 </html>
