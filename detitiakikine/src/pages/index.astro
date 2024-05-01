@@ -1,26 +1,8 @@
 ---
-import Nav from '../components/Nav.astro';
+import Layout from "../layouts/Layout.astro"
 ---
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <!-- Site Title-->
-    <title>De Titi à Kikine</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Edu+QLD+Beginner:wght@700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
-<body>
-    <Nav />
-    <main>
+    <Layout title="de Titi à Kikine">
         <section class="relative bg-image min-h-96 md:min-h-5/6 flex items-center justify-center" style="background-image: url('/image.webp'); background-size: cover; background-position: center; object-fit: cover">
             <!-- Voile transparent -->
             <div class="absolute inset-0 bg-white opacity-40"></div>
@@ -31,9 +13,6 @@ import Nav from '../components/Nav.astro';
                 <p class="text-m md:text-2xl">Découvrez notre service de confection sur-mesure, où que vous soyez.</p>
             </div>
         </section>
-        
-        
-        
             <section class="py-16 px-4">
                 <div class="text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl text-text mb-8" style="font-family: 'Bellefair', serif;">Découvrez nos Collections</h2>
@@ -42,22 +21,22 @@ import Nav from '../components/Nav.astro';
                     <!-- Bouton Hommes -->
                     <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
                         <img src="/visuel_venir.jpg" alt="Hommes" class="w-32 h-32 mr-4 object-cover rounded-full">
-                        <a href="/collections/hommes" class="text-text font-bold hover:text-olive transition duration-200">Hommes</a>
+                        <a href="/hommes" class="text-text font-bold hover:text-olive transition duration-200">Hommes</a>
                     </div>
                     <!-- Bouton Femmes -->
                     <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
                         <img src="/visuel_venir.jpg" alt="Femmes" class="w-32 h-32 mr-4 object-cover rounded-full">
-                        <a href="/collections/femmes" class="text-text font-bold hover:text-olive transition duration-200">Femmes</a>
+                        <a href="/femmes" class="text-text font-bold hover:text-olive transition duration-200">Femmes</a>
                     </div>
                     <!-- Bouton Enfants -->
                     <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
                         <img src="/visuel_venir.jpg" alt="Enfants" class="w-32 h-32 mr-4 object-cover rounded-full">
-                        <a href="/collections/enfants" class="text-text font-bold hover:text-olive transition duration-200">Enfants</a>
+                        <a href="/enfants" class="text-text font-bold hover:text-olive transition duration-200">Enfants</a>
                     </div>
                     <!-- Bouton Maroquinerie -->
                     <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
                         <img src="/visuel_venir.jpg" alt="Maroquinerie" class="w-32 h-32 mr-4 object-cover rounded-full">
-                        <a href="/collections/maroquinerie" class="text-text font-bold hover:text-olive transition duration-200">Maroquinerie</a>
+                        <a href="/maroquinerie" class="text-text font-bold hover:text-olive transition duration-200">Maroquinerie</a>
                     </div>
                 </div>
             </section>
@@ -154,47 +133,4 @@ import Nav from '../components/Nav.astro';
                     </script>
   <!-- Cal inline embed code ends -->
             </section>
-        </main>
-        
-        <footer class="bg-olive text-text py-16">
-            <div class="container mx-auto">
-                <div class="flex flex-col"> 
-                    <!-- Formulaire d'inscription à la newsletter -->
-                    <div class="mb-10">
-                        <h3 class="text-lg text-center text-text mb-4 md:mb-0 md:mr-4">Inscrivez-vous à notre newsletter</h3>
-                        <form action="#" method="POST" class="md:w-full">
-                            <div class="flex flex-col items-center">
-                                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" class="border border-gray-300 rounded py-3 px-6 text-text m-3 md:w-3/5" required>
-                                <div class="flex justify-center md:flex">
-                                     <button type="submit" class="bg-text text-olive px-4 py-2 rounded hover:bg-gray-800 w-full">S'inscrire</button>
-                                </div>
-                               
-                            </div>
-                        </form>                          
-                    </div>
-                    <!-- Réseaux sociaux -->
-                    <div class="flex justify-evenly space-x-4 mb-10">
-                        <a href="#" class="text-text hover:text-white transition duration-200">
-                            <i class="fa-brands fa-square-facebook text-3xl"></i>
-                        </a>
-                        <a href="#" class="text-text hover:text-white transition duration-200">
-                            <i class="fa-brands fa-twitter text-3xl"></i>
-                        </a>
-                        <a href="#" class="text-text hover:text-white transition duration-200">
-                            <i class="fa-brands fa-instagram text-3xl"></i>
-                        </a>
-                    </div>
-                    <!-- Liens de Footer -->
-                    <div class=" md:mb-0 text-center">
-                        <div class="flex flex-wrap justify-center text-sm">
-                            <a href="#" class="mr-4 text-text hover:text-white transition duration-200">Conditions d'utilisation</a>
-                            <a href="#" class="mr-4 text-text hover:text-white transition duration-200">Gestion des données</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>  
-
-</body>
-<script src="https://kit.fontawesome.com/e597956fa1.js" crossorigin="anonymous"></script>
-</html>
+        </Layout>

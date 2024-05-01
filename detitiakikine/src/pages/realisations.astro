@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+<Layout title="Nos réalisations">
+    <main class="py-16 px-4">
+        <h1 class="text-4xl mb-4 md:text-6xl" style="font-family: 'Bellefair', serif;">Nos Réalisations</h1>
+        <section class="py-16 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Bouton Hommes -->
+                <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                    <img src="/visuel_venir.jpg" alt="Hommes" class="w-32 h-32 mr-4 object-cover rounded-full">
+                    <a href="/hommes" class="text-text font-bold hover:text-olive transition duration-200">Hommes</a>
+                </div>
+                <!-- Bouton Femmes -->
+                <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                    <img src="/visuel_venir.jpg" alt="Femmes" class="w-32 h-32 mr-4 object-cover rounded-full">
+                    <a href="/femmes" class="text-text font-bold hover:text-olive transition duration-200">Femmes</a>
+                </div>
+                <!-- Bouton Enfants -->
+                <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                    <img src="/visuel_venir.jpg" alt="Enfants" class="w-32 h-32 mr-4 object-cover rounded-full">
+                    <a href="/enfants" class="text-text font-bold hover:text-olive transition duration-200">Enfants</a>
+                </div>
+                <!-- Bouton Maroquinerie -->
+                <div class="bg-white rounded-lg shadow-md flex flex-row items-center justify-start px-4 py-3 md:py-4">
+                    <img src="/visuel_venir.jpg" alt="Maroquinerie" class="w-32 h-32 mr-4 object-cover rounded-full">
+                    <a href="/maroquinerie" class="text-text font-bold hover:text-olive transition duration-200">Maroquinerie</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
