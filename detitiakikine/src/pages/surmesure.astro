@@ -6,13 +6,84 @@ import Layout from "../layouts/Layout.astro"
     <!-- Contenu de la page de réalisations -->
     <main class="py-16 px-4">
         <h1 class="text-4xl text-center mb-4 md:text-6xl" style="font-family: 'Bellefair', serif;">Notre service de sur-mesure</h1>
-        <p class="text-m text-center md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, enim ut laoreet mattis, turpis arcu dapibus risus, at commodo libero magna id nibh. Nullam varius, urna ac varius condimentum, lectus elit facilisis magna, id tincidunt metus lorem a sapien.</p>
-        <p>Nulla facilisi. Integer consequat dolor in enim tristique, at rhoncus ipsum tristique. Nullam vitae consectetur purus. Curabitur condimentum auctor enim, sit amet tincidunt lacus malesuada nec. Praesent in velit id est fermentum imperdiet.</p>
-        <p>Sed at lacus eget tortor facilisis varius. Vestibulum auctor, sapien eget sodales lacinia, ipsum purus aliquam felis, nec ullamcorper felis nisi vel sem. Fusce rutrum augue ut mi posuere, sed suscipit velit iaculis. Mauris euismod consequat volutpat.</p>
-        <h1 class="text-4xl text-center mb-4 md:text-6xl" style="font-family: 'Bellefair', serif;">Nos engagements</h1>
-        <p class="text-m text-center md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, enim ut laoreet mattis, turpis arcu dapibus risus, at commodo libero magna id nibh. Nullam varius, urna ac varius condimentum, lectus elit facilisis magna, id tincidunt metus lorem a sapien.</p>
-        <p>Nulla facilisi. Integer consequat dolor in enim tristique, at rhoncus ipsum tristique. Nullam vitae consectetur purus. Curabitur condimentum auctor enim, sit amet tincidunt lacus malesuada nec. Praesent in velit id est fermentum imperdiet.</p>
-        <p>Sed at lacus eget tortor facilisis varius. Vestibulum auctor, sapien eget sodales lacinia, ipsum purus aliquam felis, nec ullamcorper felis nisi vel sem. Fusce rutrum augue ut mi posuere, sed suscipit velit iaculis. Mauris euismod consequat volutpat.</p>
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Étape 1 -->
+                    <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                        <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                            <i class="fa-solid fa-phone text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-text">1. Définir le Projet</h3>
+                            <p class="text-text">Appel pour définir le projet et répondre à vos questions.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 2 -->
+                    <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                        <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                            <i class="fa-solid fa-ruler text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-text">2. Envoi des Mesures</h3>
+                            <p class="text-text">Envoi des mesures précises via l'application Netello.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 3 -->
+                    <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                        <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                            <i class="fa-solid fa-pencil text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-text">3. Envoi des Croquis</h3>
+                            <p class="text-text">Envoi des croquis par mail ou SMS et débriefing.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 4 -->
+                    <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                        <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                            <i class="fa-solid fa-shirt text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-text0">4. Envoi de la Toile Prototype</h3>
+                            <p class="text-text">Essayage en visio pour les possibles retouches.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 5 -->
+                    <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                        <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                            <i class="fa-solid fa-map-pin text-2xl"></i>
+                        </div>
+                        
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-text">5. Retouches de la Toile</h3>
+                            <p class="text-text">Retouches selon les observations de l'essayage en visio.</p>
+                        </div>
+                    </div>
+                    <!-- Étape 6 -->
+                    <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                        <ddiv class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                            <i class="fa-solid fa-shirt text-xl"></i>
+                        </ddiv>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-text">6. Confection du Vêtement</h3>
+                            <p class="text-text">Confection artisanale avec des techniques de couture haut de gamme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="m-5 md:m-20">
+            <h1 class="text-2xl text-center mb-5 md:text-6xl md:m-6" style="font-family: 'Bellefair', serif;">Nos engagements</h1>
+            <p class="md:text-xl">Nous nous engageons à vous offrir un service de sur-mesure qui correspond à votre morphologie, 
+            une morphologie en X ne sera pas mis en valeur dans un vêtement d'un femme en 8. Chaque morpholigie est mis en valeur avec des forme de 
+            vêtements differents. Nous nous engageons à vous offrir de la qualité que ce soit en terme de relation, tout comme en terme de réalisation.
+            Nous nous engageons, à ne laisser place qu'à de la bienveillance et de l'écoute. Il n'est pas 
+            toujours facile de montrer son corps à une personne inconnue, et nous ne sommes pas là pour vous juger, mais pour vous aider à prendre 
+            confiance en vous, à retrouver votre pep's, et votre originalité. 
+            Notre priorité votre confort allié avec votre personnalité, ainsi qu'avec votre morphologie. 
+            </p>
+        </div>
     </main>
 </Layout>
                            
