@@ -1,13 +1,26 @@
 ---
+import type { mapFinderOptions } from "sequelize/lib/utils"
 import Layout from "../layouts/Layout.astro"
 ---
 <Layout title="A propos">
 
     <!-- Contenu de la page de réalisations -->
-    <main class="py-16 px-4 h-screen">
+    <main class="py-16 px-4 md:h-screen">
         <h1 class="text-4xl text-center mb-4 md:text-6xl" style="font-family: 'Bellefair', serif;">À Propos de Titi à Kikine</h1>
-        <p class="text-m text-center md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum, enim ut laoreet mattis, turpis arcu dapibus risus, at commodo libero magna id nibh. Nullam varius, urna ac varius condimentum, lectus elit facilisis magna, id tincidunt metus lorem a sapien.</p>
-        <p>Nulla facilisi. Integer consequat dolor in enim tristique, at rhoncus ipsum tristique. Nullam vitae consectetur purus. Curabitur condimentum auctor enim, sit amet tincidunt lacus malesuada nec. Praesent in velit id est fermentum imperdiet.</p>
-        <p>Sed at lacus eget tortor facilisis varius. Vestibulum auctor, sapien eget sodales lacinia, ipsum purus aliquam felis, nec ullamcorper felis nisi vel sem. Fusce rutrum augue ut mi posuere, sed suscipit velit iaculis. Mauris euismod consequat volutpat.</p>
+        <div class="m-5 md:m-20">
+            <h2 class="text-2xl text-center m-5 md:text-5xl md:m-6" style="font-family: 'Bellefair', serif;">Une histoire d'enfant</h2>
+            <p class="md:text-xl">Depuis mes 6 ans, j'ai passé ma vie, avec des aiguilles dans les mains. A l'âge de 6 ans je venais de faire mon premier ouvrage de point de croix, une fraise. A l'âge de 8 ans, je me suis mise au tricot. J'ai aussi à la même
+            époque créé mon premier doudou, à la base un chiffon de ma grand-mère sur lequel j'ai dessiné une baleine, couper une deuxième partie identique cousu les deux, et rembouré. J'ai toujours entendu ma maman dire "Justine est née 
+            avec des aiguille dans les mains". J'ai donc continué ma passion en me lancant dans des études de mode, un Bac Pro Métier de la Mode et du Vêtement, que j'ai complété avec un BTS Mode. Puis je suis devenue maman, et les 
+            responsabilités ont pris la place de mes rêves, j'ai donc travaillé pendant 4 ans, pour une grande maison de luxe en maroquinerie. 
+            </p>
+        </div>
+        <div class="m-5 md:m-20">
+            <h2 class="text-2xl text-center m-5 md:text-5xl md:m-6" style="font-family: 'Bellefair', serif;">Pourquoi "de Titi à Kikine"</h2>
+            <p class="md:text-xl">Ce nom est un hommage aux surnoms que m'ont donnés mon frère et ma plus jeune soeur. J'ai beaucoup d'équart d'âge avec eux, 9 ans avec la plus grande des plus jeune (la seul qui a su dire mon prénom du premier coup), 10 ans 
+                avec mon petit frère qui lui m'a appelé Titi, et 12 ans avec ma plus jeune soeur qui elle m'a nommée Kikine. Pour moi ce nom représente beaucoup, car malgré nos équart d'âge, ils ont été là pour et le sont toujours et 
+                me soutienne dans mes choix. Ce nom me permet de combiner ma passion de la couture et la nostalgie de ces années passées à leur côtés. C'est dans cette état d'esprit que chacune de mes créations sont réalisées, avec passion et amour.
+            </p>
+        </div>
     </main>
 </Layout>
