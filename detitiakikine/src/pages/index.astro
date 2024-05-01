@@ -21,11 +21,19 @@ import Nav from '../components/Nav.astro';
 <body>
     <Nav />
     <main>
-        <section class="bg-image h-96 flex items-center justify-center" style="background-image: url('/image.png'); background-size: cover; background-position: center;">    </section> 
-            <div class="text-center text-text">
-                <h1 class="text-4xl mb-4" style="font-family: 'Bellefair', serif;">De l'écran à votre garde-robe, une élégance sur-mesure</h1>
-                <p class="text-m">Découvrez notre service de confection sur-mesure, où que vous soyez.</p>
+        <section class="relative bg-image min-h-96 md:min-h-5/6 flex items-center justify-center" style="background-image: url('/image.webp'); background-size: cover; background-position: center; object-fit: cover">
+            <!-- Voile transparent -->
+            <div class="absolute inset-0 bg-white opacity-40"></div>
+            
+            <div class="text-center text-text relative z-10">
+                <!-- Texte sur grand écran -->
+                <h1 class="text-4xl mb-4 md:text-6xl" style="font-family: 'Bellefair', serif;">De l'écran à votre garde-robe, une élégance sur-mesure</h1>
+                <p class="text-m md:text-2xl">Découvrez notre service de confection sur-mesure, où que vous soyez.</p>
             </div>
+        </section>
+        
+        
+        
             <section class="py-16 px-4">
                 <div class="text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl text-text mb-8" style="font-family: 'Bellefair', serif;">Découvrez nos Collections</h2>
@@ -53,6 +61,77 @@ import Nav from '../components/Nav.astro';
                     </div>
                 </div>
             </section>
+            <section class="py-16 px-4">
+                <div class="max-w-6xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl text-text mb-8" style="font-family: 'Bellefair', serif;">Processus de Création</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Étape 1 -->
+                        <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                            <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                                <i class="fa-solid fa-phone text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-text">1. Définir le Projet</h3>
+                                <p class="text-text">Appel pour définir le projet et répondre à vos questions.</p>
+                            </div>
+                        </div>
+                        <!-- Étape 2 -->
+                        <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                            <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                                <i class="fa-solid fa-ruler text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-text">2. Envoi des Mesures</h3>
+                                <p class="text-text">Envoi des mesures précises via l'application Netello.</p>
+                            </div>
+                        </div>
+                        <!-- Étape 3 -->
+                        <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                            <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                                <i class="fa-solid fa-pencil text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-text">3. Envoi des Croquis</h3>
+                                <p class="text-text">Envoi des croquis par mail ou SMS et débriefing.</p>
+                            </div>
+                        </div>
+                        <!-- Étape 4 -->
+                        <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                            <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                                <i class="fa-solid fa-shirt text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-text0">4. Envoi de la Toile Prototype</h3>
+                                <p class="text-text">Essayage en visio pour les possibles retouches.</p>
+                            </div>
+                        </div>
+                        <!-- Étape 5 -->
+                        <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                            <div class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                                <i class="fa-solid fa-map-pin text-2xl"></i>
+                            </div>
+                            
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-text">5. Retouches de la Toile</h3>
+                                <p class="text-text">Retouches selon les observations de l'essayage en visio.</p>
+                            </div>
+                        </div>
+                        <!-- Étape 6 -->
+                        <div class="flex items-center bg-white rounded-lg p-6 shadow-lg">
+                            <ddiv class="rounded-full bg-olive text-text p-4 h-12 w-12 flex items-center justify-center">
+                                <i class="fa-solid fa-shirt text-xl"></i>
+                            </ddiv>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-text">6. Confection du Vêtement</h3>
+                                <p class="text-text">Confection artisanale avec des techniques de couture haut de gamme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
             
             <!-- Section Prenez rendez-vous -->
             <section class="bg-olive py-16 px-4">
@@ -77,34 +156,45 @@ import Nav from '../components/Nav.astro';
             </section>
         </main>
         
-        <!-- Footer -->
         <footer class="bg-olive text-text py-16">
             <div class="container mx-auto">
-                <div class="flex flex-col md:flex-row justify-between">
-                    <!-- Liens de Footer -->
-                    <div class="w-full md:w-2/3">
-                        <div class="flex flex-wrap justify-center md:justify-end">
-                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Conditions d'utilisation</a>
-                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Gestion des données</a>
-                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Facebook</a>
-                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Twitter</a>
-                            <a href="#" class="mr-6 mb-4 text-text hover:text-white transition duration-200">Instagram</a>
-                        </div>
-                    </div>
-                    <!-- Input de Newsletter -->
-                    <div class="w-full md:w-1/3 mb-8 md:mb-0">
-                        <h3 class="text-lg font-semibold text-gray-400 mb-4">Inscrivez-vous à notre newsletter</h3>
-                        <form action="#" method="POST">
-                            <div class="flex items-center border border-gray-300 rounded overflow-hidden">
-                                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" class="appearance-none bg-transparent border-none w-full py-3 px-4 text-gray-800 leading-tight focus:outline-none" required>
-                                <button type="submit" class="bg-gray-700 text-white px-4 py-3 hover:bg-gray-800 focus:outline-none">S'inscrire</button>
+                <div class="flex flex-col"> 
+                    <!-- Formulaire d'inscription à la newsletter -->
+                    <div class="mb-10">
+                        <h3 class="text-lg text-center text-text mb-4 md:mb-0 md:mr-4">Inscrivez-vous à notre newsletter</h3>
+                        <form action="#" method="POST" class="md:w-full">
+                            <div class="flex flex-col items-center">
+                                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" class="border border-gray-300 rounded py-3 px-6 text-text m-3 md:w-3/5" required>
+                                <div class="flex justify-center md:flex">
+                                     <button type="submit" class="bg-text text-olive px-4 py-2 rounded hover:bg-gray-800 w-full">S'inscrire</button>
+                                </div>
+                               
                             </div>
-                        </form>
+                        </form>                          
+                    </div>
+                    <!-- Réseaux sociaux -->
+                    <div class="flex justify-evenly space-x-4 mb-10">
+                        <a href="#" class="text-text hover:text-white transition duration-200">
+                            <i class="fa-brands fa-square-facebook text-3xl"></i>
+                        </a>
+                        <a href="#" class="text-text hover:text-white transition duration-200">
+                            <i class="fa-brands fa-twitter text-3xl"></i>
+                        </a>
+                        <a href="#" class="text-text hover:text-white transition duration-200">
+                            <i class="fa-brands fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                    <!-- Liens de Footer -->
+                    <div class=" md:mb-0 text-center">
+                        <div class="flex flex-wrap justify-center text-sm">
+                            <a href="#" class="mr-4 text-text hover:text-white transition duration-200">Conditions d'utilisation</a>
+                            <a href="#" class="mr-4 text-text hover:text-white transition duration-200">Gestion des données</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer>  
 
 </body>
-
+<script src="https://kit.fontawesome.com/e597956fa1.js" crossorigin="anonymous"></script>
 </html>
