@@ -2,8 +2,6 @@
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 
-import { SnipcartSetup } from '@lloydjatkinson/astro-snipcart/astro';
-
 interface Props {
     title: string;
 }
@@ -28,7 +26,6 @@ const { title } = Astro.props;
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Edu+QLD+Beginner:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>{title}</title>
-    <SnipcartSetup />
 </head>
 <body>
     <header>
